@@ -65,8 +65,8 @@
         
     }];
     
-    UIPreviewAction *previewAction1 = [[LG3DTouchManager shareManager] registerActionWithTitle:@"替换该元素" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
-        [self replaceItem];
+    UIPreviewAction *previewAction1 = [[LG3DTouchManager shareManager] registerActionWithTitle:@"其他操作" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+
     }];
     
     [arrItem addObjectsFromArray:@[previewAction0 ,previewAction1]];
@@ -76,11 +76,6 @@
 
 - (void)replaceItem {
 
-    if (self.arrData.count<=0) return ;
-    [self.arrData replaceObjectAtIndex:self.index withObject:@"replace  item"];
-    
-    //发送通知更新数据
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFICATION_RELOADDATA" object:nil];
 }
 
 - (void)dealloc {

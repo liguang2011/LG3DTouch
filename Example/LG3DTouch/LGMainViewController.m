@@ -155,18 +155,6 @@ static NSString *reusedId = @"3dTouch";
     return presentationVC;
 }
 
-#pragma mark pop(push)
-- (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0) {
-
-    [self showViewController:viewControllerToCommit sender:self];
-}
-
-
-- (void)viewWillDisappear:(BOOL)animated {
-
-    [[NSNotificationCenter defaultCenter] removeObserver:self.tableView name:@"NOTIFICATION_RELOADDATA" object:nil];
-}
-
 - (void)dealloc {
     NSLog(@"tableView界面被释放了");
 }
