@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LG3DTouch_Example' do
+  pod 'LG3DTouch', :path => '../'
+
+  target 'LG3DTouch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

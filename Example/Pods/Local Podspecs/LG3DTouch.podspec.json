@@ -1,0 +1,22 @@
+{
+  "name": "LG3DTouch",
+  "version": "0.1.0",
+  "summary": "A short description of LG3DTouch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/553521355@qq.com/LG3DTouch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "553521355@qq.com": "liguang@daojia-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/553521355@qq.com/LG3DTouch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LG3DTouch/Classes/**/*"
+}
