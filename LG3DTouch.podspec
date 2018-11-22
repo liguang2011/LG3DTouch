@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/553521355@qq.com/LG3DTouch'
+  s.homepage         = 'https://github.com/liguang2011/LG3DTouch'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '553521355@qq.com' => '553521355@qq.com' }
-  s.source           = { :git => 'https://github.com/553521355@qq.com/LG3DTouch.git', :tag => s.version.to_s }
+  s.author           = { '553521355@qq.com' => 'alan0609@qq.com' }
+  s.source           = { :git => 'https://github.com/liguang2011/LG3DTouch.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LG3DTouch/Classes/**/*'
   
