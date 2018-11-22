@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		046EC2E9CB15602AE35CBEBD74BE0A04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		1492F2C522E31BD6875BDEE5AE52A6FC /* Pods-LG3DTouch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6918CFF9D257B80D556F8C9092E175 /* Pods-LG3DTouch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		728BF58A3AF72404832DBBB1D306230A /* LG3DTouch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C4D0DEC47440426B7F09BD840AD8F7 /* LG3DTouch-dummy.m */; };
+		3D86D5702E8B71F869081495B10754F9 /* LG3DTouchProxyTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9683A8A16F1F1FC941B1943C995750 /* LG3DTouchProxyTarget.m */; };
+		5014C4BB63327316A1C921D91DEC8282 /* LG3DTouchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF9884A96AC80FA4C63C8422B6D9B23 /* LG3DTouchManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E2CEF1E89E35FBFB14F4F2EA9A903C /* LG3DTouch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B79D893FF21616F3B847D9036BEE202 /* LG3DTouch-dummy.m */; };
+		62BE25E440E40D620931EE6F3EA66894 /* LG3DTouchProxyTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 9118DC3DC2F18A8D0342C9E790CE6146 /* LG3DTouchProxyTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7411D2DB57671BA16E97D8B881D55DBF /* Pods-LG3DTouch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 198035EF18E39CE0020DB2E296401F66 /* Pods-LG3DTouch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CE2E97AD1E18E0535951C14D77C73ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		86CA6CDB1E8D8CCD6C94003A043F6CCC /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8174463489A8E6D5D0BFDCA80C032 /* ReplaceMe.m */; };
-		991DB36C6F1415157E0C7DD8A2D4AE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9F19146276279A4E9E13A00C8B967EF1 /* LGShortcutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4806A371146A0FC1985DA054C71EE740 /* LGShortcutItem.m */; };
+		BA2524BA01905FA4B0E642A273CF5B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D8B7EFEE8D3D2FEE730A54C488526AA8 /* Pods-LG3DTouch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10740EBC92206142E0B8F651B45E082D /* Pods-LG3DTouch_Example-dummy.m */; };
+		DC6EA6562A0BE61F53667EEB048B8F9E /* LG3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA18DAB660BA899905D63A0A03F307E6 /* LG3DTouchManager.m */; };
+		E5369E7701F7D01E2CB985366EE8A898 /* LGShortcutItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 71271547A06FD08EC71C189A8CC2DCD3 /* LGShortcutItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBF58C55630BCFFD5BC2C6642C96358C /* Pods-LG3DTouch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D8C2A7069F16F153E0A7E3A7A08C3 /* Pods-LG3DTouch_Tests-dummy.m */; };
-		F82CC9C5220BBC52E4EAAF5667C4DA71 /* LG3DTouch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE1CAFD93E78D6BBE0B3BDAE0636926B /* LG3DTouch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5486C10F8B6CBBAD99A56605A3D53D3 /* LG3DTouch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 514FE730CEA465DF828A31E0F9130312 /* LG3DTouch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B9CFE8A2F102CC095503D9E00920134;
+			remoteGlobalIDString = D51A15AC62E51D08F56AB85C4E6381E5;
 			remoteInfo = LG3DTouch;
 		};
 /* End PBXContainerItemProxy section */
@@ -40,37 +45,42 @@
 		0082027B65EAA8AA75B0229B18D4AFB7 /* Pods-LG3DTouch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LG3DTouch_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		10740EBC92206142E0B8F651B45E082D /* Pods-LG3DTouch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LG3DTouch_Example-dummy.m"; sourceTree = "<group>"; };
 		12B269E7F876616C5440F9B649EAF6A2 /* Pods-LG3DTouch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LG3DTouch_Tests.modulemap"; sourceTree = "<group>"; };
-		137D2E33ECB9D37E26991BF1F28FDD59 /* LG3DTouch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LG3DTouch-prefix.pch"; sourceTree = "<group>"; };
 		198035EF18E39CE0020DB2E296401F66 /* Pods-LG3DTouch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LG3DTouch_Example-umbrella.h"; sourceTree = "<group>"; };
 		22A6E15718773EE06CC581154B738388 /* Pods-LG3DTouch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LG3DTouch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2DEA0F0166B2434D45AAE4A279415BF8 /* LG3DTouch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LG3DTouch.xcconfig; sourceTree = "<group>"; };
+		261D46F07EEC9353E6B002C61649B0AD /* LG3DTouch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LG3DTouch.xcconfig; sourceTree = "<group>"; };
+		2B79D893FF21616F3B847D9036BEE202 /* LG3DTouch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LG3DTouch-dummy.m"; sourceTree = "<group>"; };
 		3305D2F89C6C72BE386C83403650E8B6 /* Pods-LG3DTouch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LG3DTouch_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		341D8C2A7069F16F153E0A7E3A7A08C3 /* Pods-LG3DTouch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LG3DTouch_Tests-dummy.m"; sourceTree = "<group>"; };
 		461A91121ED166C7C622D838EF54DAF1 /* Pods-LG3DTouch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LG3DTouch_Example-frameworks.sh"; sourceTree = "<group>"; };
-		49B3CCF9B27A952043567851D806D25A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		49C4D0DEC47440426B7F09BD840AD8F7 /* LG3DTouch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LG3DTouch-dummy.m"; sourceTree = "<group>"; };
+		4806A371146A0FC1985DA054C71EE740 /* LGShortcutItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LGShortcutItem.m; sourceTree = "<group>"; };
 		4B6918CFF9D257B80D556F8C9092E175 /* Pods-LG3DTouch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LG3DTouch_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5333B05A8197EA79B11B773396C1AE5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58FABFF697DC5DC6BD642FE954D282E5 /* LG3DTouch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LG3DTouch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FF9884A96AC80FA4C63C8422B6D9B23 /* LG3DTouchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LG3DTouchManager.h; sourceTree = "<group>"; };
+		514FE730CEA465DF828A31E0F9130312 /* LG3DTouch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LG3DTouch-umbrella.h"; sourceTree = "<group>"; };
+		529B1ACAF1AB42192FD6A1B09F8D2884 /* LG3DTouch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LG3DTouch.modulemap; sourceTree = "<group>"; };
 		591E696FA6DC32B18214A429251219F5 /* Pods-LG3DTouch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LG3DTouch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		610660CB5BFAA6C9CE79C5947EE67D50 /* Pods-LG3DTouch_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LG3DTouch_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		71271547A06FD08EC71C189A8CC2DCD3 /* LGShortcutItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LGShortcutItem.h; sourceTree = "<group>"; };
+		72898579E98B33ABAD0E9CA73D71FC67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		76BF2251B11DFAEC74EE28860478365E /* LG3DTouch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LG3DTouch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7C94C32712C998CD622A3E8ECD386CD8 /* Pods-LG3DTouch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LG3DTouch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7EEC573A3244FEE7C3B23CEDF2D95D61 /* LG3DTouch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LG3DTouch.modulemap; sourceTree = "<group>"; };
 		830CDE560842947A09EE5E937FE9D795 /* Pods-LG3DTouch_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LG3DTouch_Example-resources.sh"; sourceTree = "<group>"; };
 		843C5FEBB089A4E3735EC4F24C4B5D80 /* Pods_LG3DTouch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LG3DTouch_Tests.framework; path = "Pods-LG3DTouch_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9034ECF513F8E6A9E7962BA94A7AE936 /* LG3DTouch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LG3DTouch-prefix.pch"; sourceTree = "<group>"; };
+		9118DC3DC2F18A8D0342C9E790CE6146 /* LG3DTouchProxyTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LG3DTouchProxyTarget.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0E22ADDD604D28230513B4C7E145090 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAE8174463489A8E6D5D0BFDCA80C032 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LG3DTouch/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		B2E8AA63664C5FD4DFC0B40739922340 /* Pods_LG3DTouch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LG3DTouch_Example.framework; path = "Pods-LG3DTouch_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71D6EB316271714A39F403F443076AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3E63D1A3594201A42B43ADB841D8EA /* Pods-LG3DTouch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LG3DTouch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C665455EA8FD37E9331307F6EEEB362D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA43E548A5CC91A68C73743B23597EAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CB0F0D219895F2691F4CEACB09A643B6 /* Pods-LG3DTouch_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LG3DTouch_Tests-resources.sh"; sourceTree = "<group>"; };
 		CC7AEEAC530BF09CA9F680264AB65975 /* Pods-LG3DTouch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LG3DTouch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CCB9CD9B5DF4F56B05D65A39641C768B /* Pods-LG3DTouch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LG3DTouch_Example.modulemap"; sourceTree = "<group>"; };
+		CD9683A8A16F1F1FC941B1943C995750 /* LG3DTouchProxyTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LG3DTouchProxyTarget.m; sourceTree = "<group>"; };
 		D4D843DA9BC1119621BAFCEBFC138C3B /* LG3DTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LG3DTouch.framework; path = LG3DTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1CAFD93E78D6BBE0B3BDAE0636926B /* LG3DTouch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LG3DTouch-umbrella.h"; sourceTree = "<group>"; };
+		DA18DAB660BA899905D63A0A03F307E6 /* LG3DTouchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LG3DTouchManager.m; sourceTree = "<group>"; };
+		F1F919D97B316C21FE25D61EC4AAC402 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		FE2F3FFDBAEFEF2EEE08577B324A5772 /* Pods-LG3DTouch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LG3DTouch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,21 +101,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8442FA4388C045EBCA2C8717B0C709D8 /* Frameworks */ = {
+		FF7295656C1DF99C0A97DCDFDF11E5E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				991DB36C6F1415157E0C7DD8A2D4AE3E /* Foundation.framework in Frameworks */,
+				BA2524BA01905FA4B0E642A273CF5B62 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44FD256190CC000D41DEEFC782CF052E /* Development Pods */ = {
+		325461E02F809EC74493F8CC6EBD6ACD /* LG3DTouch */ = {
 			isa = PBXGroup;
 			children = (
-				ED2B44E1F74D6DCE9B50014884351A23 /* LG3DTouch */,
+				9E561794B7126D36AC22D023F2191398 /* Manager */,
+				CCC00E36E520BE2548FFE3F30EFE013F /* Model */,
+				75987A80FEA7CF0108823395A811F538 /* Pod */,
+				392739AE33444E6643E7164612283026 /* Support Files */,
+			);
+			name = LG3DTouch;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		392739AE33444E6643E7164612283026 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B71D6EB316271714A39F403F443076AA /* Info.plist */,
+				529B1ACAF1AB42192FD6A1B09F8D2884 /* LG3DTouch.modulemap */,
+				261D46F07EEC9353E6B002C61649B0AD /* LG3DTouch.xcconfig */,
+				2B79D893FF21616F3B847D9036BEE202 /* LG3DTouch-dummy.m */,
+				9034ECF513F8E6A9E7962BA94A7AE936 /* LG3DTouch-prefix.pch */,
+				514FE730CEA465DF828A31E0F9130312 /* LG3DTouch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LG3DTouch";
+			sourceTree = "<group>";
+		};
+		3A7260DDFACB91C41B684783FFA20AE0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				325461E02F809EC74493F8CC6EBD6ACD /* LG3DTouch */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -127,11 +163,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		75987A80FEA7CF0108823395A811F538 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				76BF2251B11DFAEC74EE28860478365E /* LG3DTouch.podspec */,
+				F1F919D97B316C21FE25D61EC4AAC402 /* LICENSE */,
+				72898579E98B33ABAD0E9CA73D71FC67 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				44FD256190CC000D41DEEFC782CF052E /* Development Pods */,
+				3A7260DDFACB91C41B684783FFA20AE0 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				84DDB2550E4024804EB83C65C915075E /* Products */,
 				727B3CBAC66588DA8BC55CEE50BC6D9A /* Targets Support Files */,
@@ -166,14 +212,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5D701100F85D983983A8B5950EC65DC /* Pod */ = {
+		9E561794B7126D36AC22D023F2191398 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				58FABFF697DC5DC6BD642FE954D282E5 /* LG3DTouch.podspec */,
-				CA43E548A5CC91A68C73743B23597EAD /* LICENSE */,
-				49B3CCF9B27A952043567851D806D25A /* README.md */,
+				4FF9884A96AC80FA4C63C8422B6D9B23 /* LG3DTouchManager.h */,
+				DA18DAB660BA899905D63A0A03F307E6 /* LG3DTouchManager.m */,
 			);
-			name = Pod;
+			name = Manager;
+			path = LG3DTouch/Classes/Manager;
 			sourceTree = "<group>";
 		};
 		BBF8A7EC142162B70346140C4F8B4958 /* Pods-LG3DTouch_Example */ = {
@@ -202,29 +248,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ED2B44E1F74D6DCE9B50014884351A23 /* LG3DTouch */ = {
+		CCC00E36E520BE2548FFE3F30EFE013F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AAE8174463489A8E6D5D0BFDCA80C032 /* ReplaceMe.m */,
-				A5D701100F85D983983A8B5950EC65DC /* Pod */,
-				EFBBC2C069003989F4CDC571AF35FE73 /* Support Files */,
+				9118DC3DC2F18A8D0342C9E790CE6146 /* LG3DTouchProxyTarget.h */,
+				CD9683A8A16F1F1FC941B1943C995750 /* LG3DTouchProxyTarget.m */,
+				71271547A06FD08EC71C189A8CC2DCD3 /* LGShortcutItem.h */,
+				4806A371146A0FC1985DA054C71EE740 /* LGShortcutItem.m */,
 			);
-			name = LG3DTouch;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EFBBC2C069003989F4CDC571AF35FE73 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5333B05A8197EA79B11B773396C1AE5B /* Info.plist */,
-				7EEC573A3244FEE7C3B23CEDF2D95D61 /* LG3DTouch.modulemap */,
-				2DEA0F0166B2434D45AAE4A279415BF8 /* LG3DTouch.xcconfig */,
-				49C4D0DEC47440426B7F09BD840AD8F7 /* LG3DTouch-dummy.m */,
-				137D2E33ECB9D37E26991BF1F28FDD59 /* LG3DTouch-prefix.pch */,
-				EE1CAFD93E78D6BBE0B3BDAE0636926B /* LG3DTouch-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LG3DTouch";
+			name = Model;
+			path = LG3DTouch/Classes/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,19 +271,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		711A5F2AD22B4DEFB76FF8E28F3799A2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F82CC9C5220BBC52E4EAAF5667C4DA71 /* LG3DTouch-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		84C297C034EDAD1E1986F7464C59DDF5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7411D2DB57671BA16E97D8B881D55DBF /* Pods-LG3DTouch_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDADAB2C8221E3067FD5A4659FBC2506 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5486C10F8B6CBBAD99A56605A3D53D3 /* LG3DTouch-umbrella.h in Headers */,
+				5014C4BB63327316A1C921D91DEC8282 /* LG3DTouchManager.h in Headers */,
+				62BE25E440E40D620931EE6F3EA66894 /* LG3DTouchProxyTarget.h in Headers */,
+				E5369E7701F7D01E2CB985366EE8A898 /* LGShortcutItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +311,13 @@
 			productReference = B2E8AA63664C5FD4DFC0B40739922340 /* Pods_LG3DTouch_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9B9CFE8A2F102CC095503D9E00920134 /* LG3DTouch */ = {
+		D51A15AC62E51D08F56AB85C4E6381E5 /* LG3DTouch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B8C8CE0C89D3347A60CDAF9C0657853 /* Build configuration list for PBXNativeTarget "LG3DTouch" */;
+			buildConfigurationList = 5069426D13071AB0ADCCD47BFF083CC9 /* Build configuration list for PBXNativeTarget "LG3DTouch" */;
 			buildPhases = (
-				2979BC5C0E5F9E02FF9D3580830DFE2C /* Sources */,
-				8442FA4388C045EBCA2C8717B0C709D8 /* Frameworks */,
-				711A5F2AD22B4DEFB76FF8E28F3799A2 /* Headers */,
+				3C434273BD7E2534573DE058D01C16A1 /* Sources */,
+				FF7295656C1DF99C0A97DCDFDF11E5E8 /* Frameworks */,
+				BDADAB2C8221E3067FD5A4659FBC2506 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -331,7 +367,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B9CFE8A2F102CC095503D9E00920134 /* LG3DTouch */,
+				D51A15AC62E51D08F56AB85C4E6381E5 /* LG3DTouch */,
 				41C0A418CF0F7ECA8DC462DC1116609C /* Pods-LG3DTouch_Example */,
 				E4E61499D94F22CEC20D57579C8DEE08 /* Pods-LG3DTouch_Tests */,
 			);
@@ -339,12 +375,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2979BC5C0E5F9E02FF9D3580830DFE2C /* Sources */ = {
+		3C434273BD7E2534573DE058D01C16A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				728BF58A3AF72404832DBBB1D306230A /* LG3DTouch-dummy.m in Sources */,
-				86CA6CDB1E8D8CCD6C94003A043F6CCC /* ReplaceMe.m in Sources */,
+				60E2CEF1E89E35FBFB14F4F2EA9A903C /* LG3DTouch-dummy.m in Sources */,
+				DC6EA6562A0BE61F53667EEB048B8F9E /* LG3DTouchManager.m in Sources */,
+				3D86D5702E8B71F869081495B10754F9 /* LG3DTouchProxyTarget.m in Sources */,
+				9F19146276279A4E9E13A00C8B967EF1 /* LGShortcutItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +408,7 @@
 		4F2139889B74764FA05F35BC196A8A81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LG3DTouch;
-			target = 9B9CFE8A2F102CC095503D9E00920134 /* LG3DTouch */;
+			target = D51A15AC62E51D08F56AB85C4E6381E5 /* LG3DTouch */;
 			targetProxy = 6D344BA7E15E4B90107A7A1526DDE4FE /* PBXContainerItemProxy */;
 		};
 		D2701E0C65457E76687C6982050F442E /* PBXTargetDependency */ = {
@@ -415,6 +453,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		621ACA9CE42E2EFEEAB458BF8BA32DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261D46F07EEC9353E6B002C61649B0AD /* LG3DTouch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LG3DTouch/LG3DTouch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LG3DTouch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LG3DTouch/LG3DTouch.modulemap";
+				PRODUCT_MODULE_NAME = LG3DTouch;
+				PRODUCT_NAME = LG3DTouch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -479,9 +547,9 @@
 			};
 			name = Debug;
 		};
-		9CAC6573120177BB946041CDF0B968AB /* Debug */ = {
+		A70B6EDFA02CE1E660F649EBC2264285 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEA0F0166B2434D45AAE4A279415BF8 /* LG3DTouch.xcconfig */;
+			baseConfigurationReference = 261D46F07EEC9353E6B002C61649B0AD /* LG3DTouch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -495,7 +563,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LG3DTouch/LG3DTouch-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LG3DTouch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LG3DTouch/LG3DTouch.modulemap";
 				PRODUCT_MODULE_NAME = LG3DTouch;
@@ -504,10 +572,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -633,37 +702,6 @@
 			};
 			name = Debug;
 		};
-		ED8DE8B7E501C3B3B224C5A6AAD1E89F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEA0F0166B2434D45AAE4A279415BF8 /* LG3DTouch.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LG3DTouch/LG3DTouch-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LG3DTouch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LG3DTouch/LG3DTouch.modulemap";
-				PRODUCT_MODULE_NAME = LG3DTouch;
-				PRODUCT_NAME = LG3DTouch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FF4BC78C8E636A16B0F544DB578CEAC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB3E63D1A3594201A42B43ADB841D8EA /* Pods-LG3DTouch_Example.release.xcconfig */;
@@ -719,11 +757,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B8C8CE0C89D3347A60CDAF9C0657853 /* Build configuration list for PBXNativeTarget "LG3DTouch" */ = {
+		5069426D13071AB0ADCCD47BFF083CC9 /* Build configuration list for PBXNativeTarget "LG3DTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CAC6573120177BB946041CDF0B968AB /* Debug */,
-				ED8DE8B7E501C3B3B224C5A6AAD1E89F /* Release */,
+				621ACA9CE42E2EFEEAB458BF8BA32DDA /* Debug */,
+				A70B6EDFA02CE1E660F649EBC2264285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

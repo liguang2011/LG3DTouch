@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B9CFE8A2F102CC095503D9E00920134"
+               BlueprintIdentifier = "D51A15AC62E51D08F56AB85C4E6381E5"
                BlueprintName = "LG3DTouch"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "LG3DTouch.framework">

@@ -22,7 +22,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8330102921A68E9E00EF89E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8330102821A68E9E00EF89E1 /* Main.storyboard */; };
+		8330103121A68F2A00EF89E1 /* LGPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8330102F21A68F2A00EF89E1 /* LGPresentationViewController.m */; };
+		8330103221A68F2A00EF89E1 /* LGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8330103021A68F2A00EF89E1 /* LGMainViewController.m */; };
 		A23CC76A04C157A3CBB2B79B /* Pods_LG3DTouch_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C1E145AB2FB68EBDC738C2 /* Pods_LG3DTouch_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +65,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73C1E145AB2FB68EBDC738C2 /* Pods_LG3DTouch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LG3DTouch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8330102821A68E9E00EF89E1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8330102D21A68F2A00EF89E1 /* LGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMainViewController.h; sourceTree = "<group>"; };
+		8330102E21A68F2A00EF89E1 /* LGPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPresentationViewController.h; sourceTree = "<group>"; };
+		8330102F21A68F2A00EF89E1 /* LGPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPresentationViewController.m; sourceTree = "<group>"; };
+		8330103021A68F2A00EF89E1 /* LGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMainViewController.m; sourceTree = "<group>"; };
 		91EE4F6CC5D3D0DD1642D088 /* Pods_LG3DTouch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LG3DTouch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B496F7D758EC81CC0358AC48 /* Pods-LG3DTouch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LG3DTouch_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LG3DTouch_Tests/Pods-LG3DTouch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8CDC054FF90B0FB7B99A8FD /* LG3DTouch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LG3DTouch.podspec; path = ../LG3DTouch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -132,9 +138,13 @@
 		6003F593195388D20070C39A /* Example for LG3DTouch */ = {
 			isa = PBXGroup;
 			children = (
+				8330102D21A68F2A00EF89E1 /* LGMainViewController.h */,
+				8330103021A68F2A00EF89E1 /* LGMainViewController.m */,
+				8330102E21A68F2A00EF89E1 /* LGPresentationViewController.h */,
+				8330102F21A68F2A00EF89E1 /* LGPresentationViewController.m */,
+				8330102821A68E9E00EF89E1 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* LGAppDelegate.h */,
 				6003F59D195388D20070C39A /* LGAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LGViewController.h */,
 				6003F5A6195388D20070C39A /* LGViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -279,10 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8330102921A68E9E00EF89E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8330103121A68F2A00EF89E1 /* LGPresentationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LGAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LGViewController.m in Sources */,
+				8330103221A68F2A00EF89E1 /* LGMainViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +505,7 @@
 				GCC_PREFIX_HEADER = "LG3DTouch/LG3DTouch-Prefix.pch";
 				INFOPLIST_FILE = "LG3DTouch/LG3DTouch-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.LG3DTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LG3DTouch-ExampleLG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -509,7 +521,7 @@
 				GCC_PREFIX_HEADER = "LG3DTouch/LG3DTouch-Prefix.pch";
 				INFOPLIST_FILE = "LG3DTouch/LG3DTouch-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.LG3DTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LG3DTouch-ExampleLG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

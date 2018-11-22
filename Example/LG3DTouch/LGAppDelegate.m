@@ -12,7 +12,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    LGShortcutItem *item1 = [[LGShortcutItem alloc] initWithIconType:UIApplicationShortcutIconTypeHome typeName:@"GoType1" localizedTitle:@"去目的地1" localizedSubtitle:nil jumpUrl:@"action://page=home"];
+    
+    LGShortcutItem *item2 = [[LGShortcutItem alloc] initWithIconType:UIApplicationShortcutIconTypeTask typeName:@"GoType2" localizedTitle:@"去目的地2" localizedSubtitle:@"子标题2" jumpUrl:nil];
+    
+    [[LG3DTouchManager shareManager] autoRegisterUnit:item1];
+    [[LG3DTouchManager shareManager] autoRegisterUnit:item2];
+    
     return YES;
 }
 
@@ -41,6 +48,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    //一系列操作 配合跳转中心使用
 }
 
 @end
